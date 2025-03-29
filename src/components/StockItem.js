@@ -4,8 +4,10 @@ import { View, Text, StyleSheet } from 'react-native';
 const StockItem = ({ item }) => {
   return (
     <View style={styles.item}>
-      <Text style={styles.name}>{item.name}</Text>
-      <Text>Quantidade: {item.quantity}</Text>
+      <Text style={styles.name}>{item.nome_produto}</Text>
+      <Text>Descrição: {item.descricao}</Text>
+      <Text>Preço: {item.preco}</Text>
+      <Text>Quantidade de fornecedores: {item.quantidade_fornecedor}</Text>
     </View>
   );
 };

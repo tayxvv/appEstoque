@@ -12,7 +12,7 @@ const StockScreen = ({ navigation }) => {
   useEffect(() => {
     const fetchStock = async () => {
       try {
-        const response = await api.get('/stock');
+        const response = await api.get('/produtos');
         setStock(response.data);
       } catch (error) {
         console.error('Erro ao buscar estoque:', error);
